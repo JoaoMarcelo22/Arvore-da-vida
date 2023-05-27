@@ -19,38 +19,29 @@ export const Title = styled.h1`
 `;
 
 export const Container = styled.div`
-    width: 80vw;
-    height: 500px;
+    width: 450px;
+    height: 640px;
     margin: auto;
 
-    background-image:url('/assets/img/backGround.png') ;
+    background-image:url('/assets/img/vida.jpg') ;
     background-position: center;
     border: 1.5px solid ${(props)=>props.theme.colors.quartenary.main};
     border-radius: 26px;
     margin-bottom: 12px;
     padding: 6px;
-@media(max-width:425px) {
-    width: 80vw;
-}
-@media screen and (min-width:774px) {
-    width: 50vw;
-}
-`;
+    @media(max-width:465px) {
+        width: 100%;
 
-
-export const Img = styled.img`
-    width: 60px;
-    height: 60px;
+}
 `;
 
 export const SubTitle = styled.h2`
     margin-bottom: 28px;
     font-family:'Poppins_BoldI';
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
     text-shadow: 0.5px 0.5px 0.5px black, 0.5px 0.5px 0.5px  black;
-
-    color: ${(props)=>props.theme.colors.primary.light};
+    color: ${(props)=>props.theme.colors.terciary.light};
 `;
 
 export const Label =styled.label`
@@ -68,7 +59,7 @@ export const ContainerInput = styled.div`
     margin: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 6px;
+    margin-top: 10px;
     padding: 0px 20px;
     border-radius: 22px;
     border: 1.5px solid ${(props)=>props.theme.colors.secundary.main};
@@ -76,7 +67,10 @@ export const ContainerInput = styled.div`
 `;
 
 export const ContainerForm = styled.div`
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 28px 0px;
 `;
 export const ContainerButton =styled.div`
     height: 28px;
@@ -87,7 +81,6 @@ export const ContainerButton =styled.div`
     align-items: center;
 
     margin: auto;
-    margin-top: 50px;
     border-radius: 26px;
     background-color: ${(props)=>props.theme.colors.quartenary.dark};
     border: 2px solid ${(props)=>props.theme.colors.quartenary.main};
@@ -96,20 +89,7 @@ export const ButtonForm = styled(Button)`
     color: black;
 `;
 
-export const ContainerRegister = styled.div`
-    max-width: 250px;
-    margin: auto;
-    height: 100px;
-    margin-top: 50px;
-    text-align: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-@media(max-width:355px) {
-    margin-top: 20px;
-}
-`;
 export const  Text = styled.p`
     ${(props)=>props.theme.font.H1}
     letter-spacing: 1px;
@@ -120,17 +100,6 @@ export const  Text = styled.p`
     font-size: 20px;
 
     }
-
-    
     color: ${(props)=>props.theme.colors.terciary.light};
     text-shadow: 1.5px 1.5px 1.5px ${(props)=>props.theme.colors.quartenary.dark}, 10.5px 10.5px 10.5px  ${(props)=>props.theme.colors.quartenary.dark};
-`;
-export const A = styled.a`
-    cursor: pointer;
-    font-family: 'Poppins_Medium';
-    letter-spacing: 1px;
-    font-size: 10px;
-    color: ${(props)=>props.theme.colors.terciary.light};
-    text-shadow: 1.5px 1.5px 1.5px ${(props)=>props.theme.colors.quartenary.dark}, 10.5px 10.5px 10.5px  ${(props)=>props.theme.colors.quartenary.dark};
-
 `;
