@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import Login from "./Login";
 
 export default function More() {
     return (<>
@@ -10,11 +11,7 @@ export default function More() {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="assets/img/pandemic.png" />
         </Head>
-        <Nav/>    
-        <p>
-            tudo nossofdgggggggggggggggggggggggggggggg
-        </p> 
-        <Footer />
+        <Login/>
     </>
     )
 }
